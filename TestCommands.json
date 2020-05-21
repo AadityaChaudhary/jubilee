@@ -1,0 +1,45 @@
+{
+  "selenium-path": "/home/aadi/shared/go/src/github.com/tebeka/selenium/vendor/selenium-server.jar",
+  "driver-path": "/home/aadi/shared/go/src/github.com/tebeka/selenium/vendor/geckodriver",
+  "port": 8080,
+  "browser": "firefox",
+  "commands": [
+    {
+      "command": "open",
+      "link": "https://github.com/",
+      "comment": "Open Link"
+    },
+    {
+      "command": "click",
+      "id": "xpath=/html/body/div[1]/header/div/div[1]/div[2]/button/svg/path",
+      "comment": "clicked top right menu button"
+    },
+    {
+      "command": "type",
+      "id": "xpath=/html/body/div[1]/header/div/div[2]/div[2]/div/div/div/form/label/input[1]",
+      "input": "AadityaChaudhary",
+      "comment": "typed out 'AadityaChaudhary' into search"
+    },
+    {
+      "command": "click",
+      "id": "xpath=/html/body/div[4]/main/div/div[2]/nav[1]/a[10]",
+      "comment": "clicked 'Users' button"
+    },
+    {
+      "command": "click",
+      "id": "xpath=/html/body/div[4]/main/div/div[3]/div/div[2]/div/div/div[2]/div[1]/div[2]/span/span/a",
+      "comment" : "clicked follow"
+    },
+    {
+      "command": "click",
+      "id": "xpath=/html/body/div[4]/main/div/div[3]/div/div[2]/div/div/div[2]/div[1]/div[1]/a[1]",
+      "comment": "clicked 'Adi'"
+    },
+    {
+      "command": "click",
+      "id": "xpath=/html/body/div[4]/main/div/div[3]/div[2]/nav/a[2]",
+      "comment": "clicked repositories"
+    }
+
+  ]
+}
