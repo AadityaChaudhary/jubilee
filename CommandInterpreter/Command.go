@@ -13,7 +13,8 @@ type Command struct {
 	CommandType string 	`json:"command"`
 	Link 		string 	`json:"link"`
 	Id 			string 	`json:"id"`
-	Comment 		string 	`json:"comment"`
+	Comment 	string 	`json:"comment"`
+	OutputPath	string	`json:"output"`
 	Input 		string 	`json:"input"`
 	Timeout		int		`json:"timeout"`
 }

@@ -54,5 +54,7 @@ func ExecuteCommand(com Command) bool {
 
 	fmt.Println(msg)
 
+	//write result to file
+
 	return result
 }

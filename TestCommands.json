@@ -3,6 +3,7 @@
   "driver-path": "/home/aadi/shared/go/src/github.com/tebeka/selenium/vendor/geckodriver",
   "port": 8080,
   "browser": "firefox",
+  "output": "",
   "commands": [
     {
       "command": "open",
