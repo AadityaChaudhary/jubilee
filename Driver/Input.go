@@ -1,7 +1,7 @@
 package Driver
 
 
-
+// i mean c++ really is this awesome, we have throw and catch!
 func Click(id string) (string, bool) {
 	elem, err := utilFind(id)
 
@@ -22,6 +22,7 @@ func Click(id string) (string, bool) {
 
 }
 
+// no function headers? no problem!
 func Type(id string, msg string) (string, bool) {
 	elem, err := utilFind(id)
 

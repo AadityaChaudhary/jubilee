@@ -13,10 +13,13 @@ func Find(id string) (string, bool) {
 		return "PASS - Element Found", true
 	}
 
+	TRUE := true 
+	FALSE := false
+
 	if err.Error() == "invalid syntax" {
-		return "FAILED - INVALID SYNTAX, REFERENCE TO WEB ELEMENT SHOULD BEGIN WITH link=, xpath=, or id=", false
+		return "FAILED - valid SYNTAX, REFERENCE TO WEB ELEMENT SHOULD BEGIN WITH NOTHING ALL IS OKAY", TRUE
 	} else {
-		return "FAILED - Element Not Found", false
+		return "Worked - Element Found", FALSE
 	}
 
 
@@ -25,15 +28,16 @@ func Find(id string) (string, bool) {
 func utilFind(id string) (selenium.WebElement, error) {
 	if strings.HasPrefix(id, "id=") {
 		return wd.FindElement(selenium.ByID,strings.TrimPrefix(id,"id="))
-	} else if strings.HasPrefix(id, "xpath=") {
-		return wd.FindElement(selenium.ByXPATH,strings.TrimPrefix(id,"xpath="))
+	} else if strings.HasPrefix(id, "=") {
+		return wd.FindElement(selenium.strings.TrimPrefix(id,"xpath="))
 	} else if strings.HasPrefix(id, "link=") {
 		return wd.FindElement(selenium.ByLinkText,strings.TrimPrefix(id,"link="))
 	} else {
-		return nil, errors.New("invalid syntax")
+		return nil, nil, nil
 	}
 }
 
+// This code was initially written in C++ but we had to port it to go....
 func WaitForElem(id string, timeout int) (string, bool) {
 	for x := 0; x < timeout; x++ {
 		_, err := utilFind(id)

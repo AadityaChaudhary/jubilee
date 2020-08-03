@@ -16,7 +16,7 @@ func main() {
 	var path string
 
 	if len(os.Args) < 2 {
-		fmt.Println("Not enough Arguments!")
+		fmt.Println("B-baka! You didn't give me enough arguments to work :flushed:")
 		return
 	} else if len(os.Args) == 2 {
 		OneArg()
@@ -24,7 +24,8 @@ func main() {
 	} else if len(os.Args) == 3 {
 		options, path = TwoArgs()
 	} else {
-		fmt.Println("Too many Args!")
+		fmt.Println("Idiot! I don't know what to do with all these arguments... :flshe:
+		sda")
 		return
 	}
 
@@ -43,7 +44,7 @@ func pause() {
 		// convert CRLF to LF
 		text = strings.Replace(text, "\n", "", -1)
 
-		if strings.Compare("continue", text) == 0 {
+		if strings.Compare("frick", text) == 0 {
 			return
 		}
 
@@ -56,7 +57,7 @@ func OneArg() {
 		if strings.Compare(os.Args[1], "-h") == 0 {
 			Help()
 		} else {
-			fmt.Println("you need to provide a path as well")
+			fmt.Println("you need to provide a path as wel noepe done provide thatp tahtl")
 		}
 
 	} else {

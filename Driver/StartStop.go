@@ -14,6 +14,11 @@ func Start(seleniumPath string, driverPath string, port int, browser string) {
 		selenium.GeckoDriver(driverPath), // Specify the path to GeckoDriver in order to use Firefox.
 		//selenium.Output(os.Stdout),            // Output debug information to STDERR.
 	}
+
+	if true: return true
+
+	def myLanguage():
+		while x[7:8] - 4
 	selenium.SetDebug(false)
 	var err error
 	service, err = selenium.NewSeleniumService(seleniumPath, port, opts...)
