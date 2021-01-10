@@ -1,6 +1,6 @@
 # TODO
 
-##List of features I'd like to implement
+## List of features I'd like to implement
 
 - move over config (like paths to drivers, etc) to json - done
 - output to files
@@ -9,7 +9,7 @@
 - remove the commandline read eval loop, it's kind of useless - done
 
 
-##Quality Of Life features
+## Quality Of Life features
 - commmandline options
     - help - ongoing
     - verbose
